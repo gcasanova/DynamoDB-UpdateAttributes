@@ -1,0 +1,3 @@
+aws.access.key = xxxxxxxxxx
+aws.secret.key = xxxxxxxxxx
+aws.dynamodb.table = xxxxxxxxxx

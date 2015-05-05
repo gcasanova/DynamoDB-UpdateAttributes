@@ -1,0 +1,11 @@
+{
+  "name": "DynamoDB-UpdateAttribute",
+  "version": "1.0.0",
+  "description": "Simple node.js script to change the attribute type of existing items in a DynamoDB table",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guillermo Casanova",
+  "license": "ISC"
+}
