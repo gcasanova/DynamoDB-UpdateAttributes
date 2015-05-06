@@ -20,7 +20,7 @@ var dynamodb = new aws.DynamoDB();
 
 // scan table
 function scanTable(lastKey) {
-	if (lastKey == null) {
+	if (lastKey === null) {
 		dynamodb.scan({
 	        "TableName": AWS_DYNAMODB_TABLE
     	}, function (err, data) {
@@ -37,9 +37,7 @@ function scanTable(lastKey) {
 	} else {
 		dynamodb.scan({
         	"TableName": AWS_DYNAMODB_TABLE,
-        	"ExclusiveStartKey": {
-	        	"Id": {"S":lastKey.toString()}
-	        }
+        	"ExclusiveStartKey": lastKey
 	    }, function (err, data) {
 		    if (err) {
 		    	console.log(err, err.stack);
